@@ -133,6 +133,11 @@ img {
     opacity: 0.7;
 }
 
+/* Team */
+#team img {
+    border-radius: 50%;
+}
+
 /* Contact form */
 .callback-form {
     width: 100%;
@@ -184,4 +189,33 @@ img {
 
 .footer .social > * {
     margin-right: 30px;
+}
+
+/* Media queries */
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .solutions.flex-columns .column,
+    .cases.flex-grid .column,
+    .blog.flex-columns .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .team img {
+        width: 70%;
+    }
 }
